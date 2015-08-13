@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Leveling</title>
+		<script src="jquery-1.11.3.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+				
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div style="width: 65%; margin: auto;">
+			<h1 class="page-header">Leveling</h1>
+			<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
+				<div class="carousel-inner" role="listbox">
+					<div id="div0" class="item active">
+						<h4>Enter the activites and the maximum number of people who can do them below:</h4>
+						<table>
+							<thead><tr>
+								<th>Activity</th><th>Max</th>
+							</tr></thead>
+							<tbody id="tbodyActivities"></tbody>
+						</table>
+						<div class="btn-div">
+							<button id="addActivity" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Add Another Activity</button>
+						</div>
+					</div>
+					<div id="div1" class="item">
+						<h4>Enter the names and top choices of each person below:</h4>
+						<table>
+							<thead><tr>
+								<th>Name</th><th>Acitivity 1</th><th>Activity 2</th><th>Activity 3</th>
+							</tr></thead>
+							<tbody id="tbodyNames"></tbody>
+						</table>
+						<div class="btn-div">
+							<button id="addName" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span> Add Another Person</button>
+						</div>
+					</div>
+					<div id="div2" class="item">
+						<div class="text-center">
+							<h4 style="display: inline-block; margin-right: 20px;">Download table as Excel file:</h4>
+							<a id="download" class="btn btn-sm btn-info" role="button" target="_blank" download="Leveling.csv">Download</a>
+						</div>
+						<table class="table table-striped table-hover">
+							<thead><tr>
+								<th>Name</th><th>Activity</th><th>Choice</th>
+								<tbody id="tbodyRanks"></tbody>
+							</tr></thead>
+						</table>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-default navbar-fixed-bottom" style="text-align: center;">
+				<ul class="pagination pagination-lg">
+					<li class="disabled">
+						<a id="prev" class="carousel-cntrl" href="#" onclick="$(this).blur();" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="active"><a id="page0" href="#">Activities</a></li>
+					<li><a id="page1" href="#">Names</a></li>
+					<li class="disabled perm"><a id="page2" href="#">Table</a></li>
+					<li>
+						<a id="next" class="carousel-cntrl" href="#" onclick="$(this).blur();" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		
+		<script src="init.js"></script>
+	</body>
+</html>

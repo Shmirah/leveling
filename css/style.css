@@ -1,0 +1,21 @@
+body {
+	padding-bottom: 125px;
+}
+h1, th {
+	text-align: center;
+}
+table:not(.table) {
+	width: 100%;
+	margin: auto;
+	border-spacing: 5px;
+	border-collapse: separate;
+}
+.carousel-inner .item {
+	width: 75%;
+	margin: auto;
+}
+.btn-div {
+	margin-top: 5px;
+	padding-right: 5px;
+	text-align: right;
+}
