@@ -50,7 +50,7 @@ $(function() {
 		} else {
 			$('#page2').parent().removeClass('perm disabled');
 			$('#next').parent().removeClass('disabled');
-			var excelData = [['Name','Activity','Rank']];
+			var excelData = [['Name','FartFace','Rank']];
 			var count = [];
 			for(var j = 1;j <= 3;j++) {
 				for(var i = 0;i < data.length;i++) {
